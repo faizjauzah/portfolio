@@ -5,7 +5,7 @@ Personal portfolio site: React 19 + Vite 8 + Tailwind v4, deployed to GitHub Pag
 ## Commands
 
 - `npm install` — npm is the package manager (`package-lock.json`; CI uses `npm ci` on Node 20).
-- `npm run dev` — dev server at `http://localhost:5173/personal-portofolio/`; the root URL redirects, so use the base path.
+- `npm run dev` — dev server at `http://localhost:5173/portfolio/`; the root URL redirects, so use the base path.
 - `npm run lint` — ESLint flat config; lints only `**/*.{ts,tsx}` and ignores `dist/`.
 - `npm run build` — `tsc -b && vite build`; this is also the typecheck (strict, `noUnusedLocals`). The >500 kB chunk warning from three.js is expected, not an error.
 - No test runner or formatter is configured. Don't invent `npm test` or Prettier commands.
@@ -13,7 +13,7 @@ Personal portfolio site: React 19 + Vite 8 + Tailwind v4, deployed to GitHub Pag
 ## Deployment and base path
 
 - Pushing to `main` runs `.github/workflows/deploy.yml`, which builds and publishes `dist/` to GitHub Pages.
-- `base: "/personal-portofolio/"` in `vite.config.ts` is required for deployed asset URLs; note the spelling. Don't change it without updating the Pages setup.
+- `base: "/portfolio/"` in `vite.config.ts` is required for deployed asset URLs and must match the GitHub repo name. Don't change it without updating the Pages setup.
 - Public assets must be referenced with `import.meta.env.BASE_URL` (see `src/components/3d/HandModel.tsx`), never as root-absolute `/file` paths.
 - `dist/` is generated and gitignored; CI rebuilds it on deploy. Never commit or hand-edit it.
 
