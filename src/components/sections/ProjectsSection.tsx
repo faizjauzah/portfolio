@@ -3,6 +3,15 @@ import { Card } from "../ui/Card";
 export function ProjectsSection() {
   const projects = [
     {
+      title: "F1 Rulebook RAG",
+      type: "Solo Project",
+      description: "Retrieval-augmented generation over the six 2026 FIA F1 regulation PDFs: clause-aware chunking into 3,058 embeddings, fully local inference, and RAGAS scores of 0.91 context recall and 0.88 faithfulness.",
+      color: "red" as const,
+      pattern: "circle" as const,
+      tags: ["RAG", "FastAPI", "ChromaDB", "RAGAS", "Docker"],
+      repo: "https://github.com/faizjauzah/f1-rulebook-rag",
+    },
+    {
       title: "Retail Product Detection",
       type: "Undergraduate Thesis · Solo Project",
       description: "Semi-supervised learning pipeline using YOLOv12-Nano with pseudo-labeling and Noisy Student Training, lifting labeling efficiency by 50% and reaching 95% mAP across 408 retail images.",

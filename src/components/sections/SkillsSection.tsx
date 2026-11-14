@@ -8,13 +8,13 @@ export function SkillsSection() {
     },
     {
       name: "Machine Learning & CV",
-      skills: ["Scikit-learn", "PyTorch", "YOLOv12", "Semi-Supervised Learning", "Object Detection", "Pseudo-Labeling", "NLTK"],
+      skills: ["Scikit-learn", "PyTorch", "YOLOv12", "Semi-Supervised Learning", "Object Detection", "Pseudo-Labeling", "NLTK", "RAG", "RAGAS"],
       color: "bg-[#1040C0]",
       textColor: "text-white"
     },
     {
       name: "Data & Backend",
-      skills: ["Pandas", "NumPy", "PySpark", "EDA", "Feature Engineering", "MariaDB", "Supabase"],
+      skills: ["Pandas", "NumPy", "PySpark", "EDA", "Feature Engineering", "MariaDB", "Supabase", "FastAPI", "ChromaDB", "Docker"],
       color: "bg-[#F0C020]",
       textColor: "text-black"
     },
