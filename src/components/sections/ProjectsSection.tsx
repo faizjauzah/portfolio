@@ -52,7 +52,7 @@ export function ProjectsSection() {
     {
       title: "StatisF1",
       type: "Team Project · Project Leader",
-      description: "Led a 4-member team building an F1 statistics and marketing analytics website with engagement dashboards and Grok AI-powered insights for users.",
+      description: "Led a 4-member team building an F1 statistics and marketing analytics website with engagement dashboards and Groq AI-powered insights for users.",
       color: "blue" as const,
       pattern: "circle" as const,
       tags: ["PHP", "JavaScript", "Full-Stack"],
